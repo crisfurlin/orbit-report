@@ -7,7 +7,7 @@
     <th>Orbit Type</th>
     <th>Launch Date</th>
   </tr>
-  <tr *ngFor="let satellite of satellites">
+  <tr *ngFor="let satellite of satellites; let isEven = even" [class.even-row]="isEven">
     <td>{{ satellite.name }}</td>
     <td [class.warning]="satellite.shouldShowWarning()">{{ satellite.type}}</td>
     <td>{{ satellite.operational }}</td>
