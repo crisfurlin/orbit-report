@@ -2,6 +2,10 @@
     margin-bottom: 40px;
 }
 
+label {
+    margin-right: 7px;
+}
+
 button {
     margin-left: 10px;
     color: #fff;
